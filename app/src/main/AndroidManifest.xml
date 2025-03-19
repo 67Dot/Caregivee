@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:ignore="LockedOrientationActivity">
+
+    <uses-feature
+        android:name="android.hardware.telephony"
+        android:required="false" />
+
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.READ_CONTACTS" />
+    <uses-permission android:name="android.permission.READ_PHONE_STATE"/> <!-- This Is Only For API 26, Which Seems To Require This Permission For SmsManager's .sendTextMessage() Method) -->
+    <uses-permission android:name="android.permission.SEND_SMS" />
+
+    <!-- Foreground Service Permissions Begin 1/2 -->
+    <uses-permission android:name="android.permission.ACCESS_BACKGROUND_LOCATION"/>
+    <uses-permission android:name="android.permission.FOREGROUND_SERVICE"/>
+    <uses-permission android:name="android.permission.FOREGROUND_SERVICE_LOCATION"/> <!-- Possibly Needed, Per Logcat Errors But NOT Per https://www.here.com/docs/bundle/sdk-for-android-navigate-developer-guide/page/topics/get-locations-enable-background-updates.html -->
+    <uses-permission android:name="android.permission.FOREGROUND_SERVICE_SPECIAL_USE"/>
+    <uses-permission android:name="android.permission.POST_NOTIFICATIONS"/>
+    <uses-permission android:name="android.permission.WAKE_LOCK"/> <!-- Keeps App On Even When Device Asleep, But Uses Up More Battery. -->
+    <!-- Foreground Service Permissions End 1/2 -->
+
+    <application
+        android:allowBackup="true"
+        android:dataExtractionRules="@xml/data_extraction_rules"
+        android:fullBackupContent="true"
+        android:icon="@mipmap/caregivee_logo"
+        android:label="@string/mtAppName"
+        android:roundIcon="@mipmap/caregivee_logo_round"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.Caregivee"
+        tools:targetApi="31">
+
+
+        <!-- Foreground Service Begin 2/2 -->
+        <service
+            android:name="com.example.caregivee.BeginForegroundService"
+            android:enabled="true"
+            android:exported="true"
+            android:permission="android.permission.FOREGROUND_SERVICE"
+            android:foregroundServiceType="location|specialUse">
+            <!-- Since We Set android:exported To true, This Means Other Apps Can Interact With Ours. Attribute android:permission Limits The Scope To Only Apps With The Specified Permission(s) -->
+                <property android:name="android.app.PROPERTY_SPECIAL_USE_FGS_SUBTYPE"
+                    android:value="sends_sms_if_rehabilitant_does_not_check_in"/> <!-- Note: Explanation For "specialUse" Per: https://developer.android.com/about/versions/14/changes/fgs-types-required#special-use-->
+        </service>
+        <!-- Foreground Service End  2/2 -->
+
+        <!-- Broadcast Receiver -->
+        <receiver
+            android:name=".BeginForegroundServiceTransmissionReceiver"
+            android:exported="true"
+            android:permission="android.permission.POST_NOTIFICATIONS">
+            <!-- Since We Set android:exported To true, This Means Other Apps Can Interact With Ours. Attribute android:permission Limits The Scope To Only Apps With The Specified Permission(s) -->
+        </receiver>
+        <!-- Broadcast Receiver -->
+
+        <!-- Note, The App Is Unpredictable When Screen Rotation Is Permitted
+             E.G. In Android Oreo, If We Rotate The Screen In ActivitySettings To Landscape And Then Start The App...
+             For Some Reason, It Begins The "App Offline" Subroutine Shortly Thereafter (maybe because the Foreground Service isn't initialized and it calls onDestroy() in ActivityCaregivee for some reason related to the screen rotation).
+             Sooooooo... We Add "android:screenOrientation" And Also Suppress The Warning Using "tools:ignore" -->
+
+        <activity
+            android:name=".ActivityBehestImportant"
+            android:exported="false"
+            android:screenOrientation="portrait"
+            android:theme="@style/Theme.Caregivee" />
+        <activity
+            android:name=".ActivityBehestRecyclerView"
+            android:exported="false"
+            android:screenOrientation="portrait"
+            android:theme="@style/Theme.Caregivee" />
+        <activity
+            android:name=".ActivityCaregivee"
+            android:exported="false"
+            android:screenOrientation="portrait"
+            android:theme="@style/Theme.Caregivee" />
+        <activity
+            android:name=".ActivitySettings"
+            android:exported="false"
+            android:screenOrientation="portrait"
+            android:theme="@style/Theme.Caregivee" />
+        <activity
+            android:name=".ActivityTelephoneContactsRecyclerView"
+            android:exported="false"
+            android:screenOrientation="portrait"
+            android:theme="@style/Theme.Caregivee" />
+        <activity
+            android:name=".ActivityTelephoneContactsManualInput"
+            android:exported="false"
+            android:screenOrientation="portrait"
+            android:theme="@style/Theme.Caregivee" />
+        <activity
+            android:name=".ActivityTimeToExitApp"
+            android:exported="false"
+            android:screenOrientation="portrait"
+            android:theme="@style/Theme.Caregivee" />
+        <!-- NOTE: Attribute flag "android:alwaysRetainTaskState" Makes Sure That Activities Don't Restart On Defocus And Refocus Of App (I.E. Pause And Unpause Of App), May Only Be Required For Main Activity -->
+        <activity
+            android:name=".ActivityBegin"
+            android:exported="true"
+            android:alwaysRetainTaskState="true"
+            android:screenOrientation="portrait"
+            android:theme="@style/Theme.AppCompat.Light">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+    </application>
+
+</manifest>

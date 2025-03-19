@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<!-- Review Markup For This Page [√√√√] -->
+<!-- We Use Our Own Custom Spinner XML So We Can Change Text Color, Especially Helpful As The "Spinner" (At Least On Android Marshmallow) Defaults To A Text Color That Doesn't Contrast Well -->
+
+<TextView
+    android:gravity="start"
+    android:layout_height="wrap_content"
+    android:layout_width="match_parent"
+    android:padding="5dip"
+    android:textColor="#000000"
+    android:textSize="20sp"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+/>

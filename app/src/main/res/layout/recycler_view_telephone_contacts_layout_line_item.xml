@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<!-- Review Markup For This Page [√√√√] -->
+
+<androidx.cardview.widget.CardView
+    android:layout_height="wrap_content"
+    android:layout_margin="10dp"
+    android:layout_width="match_parent"
+    app:cardElevation="10dp"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+    <!-- app:CardElevation Makes It Look Like The "Line Item" Is Hovering Above The Surface -->
+    <LinearLayout
+        android:layout_height="wrap_content"
+        android:layout_width="match_parent"
+        android:orientation="horizontal"
+        android:padding="5dp"
+        tools:ignore="UseCompoundDrawables">
+        <!-- If You Want To Remove The Suppression For "UseCompoundDrawables" And Actually Use A Compound Drawable, Here's Potentially How: https://stackoverflow.com/questions/8318765/how-do-i-use-a-compound-drawable-instead-of-a-linearlayout-that-contains-an-imag -->
+        <ImageView
+            android:contentDescription="@string/mtContactType"
+            android:id="@+id/mxImageView"
+            android:layout_height="40dp"
+            android:layout_width="40dp" />
+        <TextView
+            android:id="@+id/mxTextView"
+            android:layout_height="wrap_content"
+            android:layout_weight="1.0"
+            android:layout_width="0dp"
+            android:padding="5dp"
+            android:text="@string/mtItemPlaceholder"
+            android:textAppearance="@android:style/TextAppearance.Material.Headline"
+            android:textStyle="bold"/>
+    </LinearLayout>
+</androidx.cardview.widget.CardView>

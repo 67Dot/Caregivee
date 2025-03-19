@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<!-- Review Markup For This Page [√√√√] -->
+
+<!-- Use android:keepScreenOn To Keep The Screen From Timing Out (Source: https://stackoverflow.com/a/27744484/16118981) -->
+
+<FrameLayout
+    android:keepScreenOn="true"
+    android:layout_height="match_parent"
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout
+        android:layout_height="match_parent"
+        android:layout_width="match_parent"
+        android:orientation="vertical">
+        <TextView
+            android:id="@+id/mxManualNameLabel"
+            android:labelFor="@id/mxManualName"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:layout_width="match_parent"
+            android:text="@string/mtLabelContactName"/>
+        <EditText
+            android:autofillHints="name"
+            android:id="@+id/mxManualName"
+            android:inputType="text"
+            android:layout_height="0dp"
+            android:layout_weight="2"
+            android:layout_width="match_parent"
+            android:text=""/>
+        <TextView
+            android:id="@+id/mxManualMobileLabel"
+            android:labelFor="@id/mxManualMobile"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:layout_width="match_parent"
+            android:text="@string/mtLabelMobile" />
+        <EditText
+            android:autofillHints="phone"
+            android:id="@+id/mxManualMobile"
+            android:inputType="phone"
+            android:layout_height="0dp"
+            android:layout_weight="2"
+            android:layout_width="match_parent" />
+        <Button
+            android:fontFamily="sans-serif-light"
+            android:id="@+id/mxBackButton"
+            android:layout_height="0dp"
+            android:layout_weight="3"
+            android:layout_width="match_parent"
+            android:text="@string/mtBack"
+            android:textAppearance="@android:style/TextAppearance.Material.Large" />
+        <TextView
+            android:background="#FFFFFF"
+            android:fontFamily="sans-serif-light"
+            android:gravity="top|start"
+            android:id="@+id/mxStatusWindow"
+            android:layout_height="0dp"
+            android:layout_weight="21"
+            android:layout_width="match_parent"
+            android:text=""
+            android:textAppearance="@android:style/TextAppearance.Material.Large" />
+        <!-- "top|start" instead "top|left" due to this suggestion: Use "start" instead of "left" to ensure correct behavior in right-to-left locales. -->
+    </LinearLayout>
+    <LinearLayout
+        android:layout_height="match_parent"
+        android:layout_width="match_parent"
+        android:orientation="vertical">
+        <TextView
+            android:alpha="0.9"
+            android:background="#FFFFFF"
+            android:fontFamily="sans-serif-black"
+            android:gravity="center"
+            android:id="@+id/mxRestartActivity"
+            android:layout_height="match_parent"
+            android:layout_width="match_parent"
+            android:text="@string/mtRestartActivity"
+            android:textAppearance="@android:style/TextAppearance.Material.Display2"
+            android:visibility="gone" />
+    </LinearLayout>
+</FrameLayout>
+
+

@@ -1,0 +1,124 @@
+<resources>
+    <!-- Strings -->
+    <string name="mtAppName">Caregivee</string>
+    <string name="mtAirplaneModePseudoToast">Airplane mode on!\nTexts not being sent!</string>
+    <string name="mtAllContactSlotsRecommendedAndCurrent">All slots recommended be filled/current.\n(Repeats allowed.)</string>
+    <string name="mtAppExit">Closing app…</string>
+    <string name="mtAppNameWithEmojis">Caregivee ❤️😌\n<font size="30">emergencyTexter</font></string> <!-- EMOJI -->
+    <string name="mtAssistance">Help! (Caregivee)</string>
+    <string name="mtAtLeastOneNumberNeeded">Number missing!</string>
+    <string name="mtBack">👈🏽 Back</string> <!-- EMOJI -->
+    <string name="mtCheckedIn">:)</string>
+    <string name="mtCheckedInNotification">Running…%1$s</string>
+    <string name="mtCoarseLocationMode">&lt;br />&lt;br />\n&lt;b>Approx. GPS Only&lt;/b></string>
+    <string name="mtContact0">☎️ Contact 1</string> <!-- EMOJI -->
+    <string name="mtContact1">☎️ Contact 2</string> <!-- EMOJI -->
+    <string name="mtContact2">☎️ Contact 3</string> <!-- EMOJI -->
+    <string name="mtContactPrefix">☎️ </string> <!-- EMOJI -->
+    <string name="mtContactType">Contact Type</string>
+    <string name="mtEmergencyNumberNotCurrentlyAllowed">Probable emergency #.\nNot currently allowed.</string>
+    <string name="mtForegroundServiceStarted">Background service initiated!</string>
+    <string name="mtForegroundServiceStopped">Background service has stopped.</string>
+    <string name="mtGpsExpired">GPS Expired!\nSee "Settings".</string>
+    <string name="mtGpsExpiredLongForm">&lt;br />&lt;br />\n&lt;b>&lt;font color="#FF0000">GPS PERMISSIONS EXPIRED!&lt;/font>&lt;/b></string>
+    <string name="mtGpsLink">https://www.google.com/maps/place/%1$s,%2$s</string>
+    <string name="mtHowToExitApp">\n(Reopen app to exit.)</string>
+    <string name="mtItemPlaceholder">Item:</string>
+    <string name="mtLabelContactName">Contact Name:</string>
+    <string name="mtLabelMobile">Mobile:</string>
+    <string name="mtLatLon">\nLat: %1$s\nLon: %2$s</string>
+    <string name="mtLegalInfo">This app is released with a GPL-3.0 license. It has been made freely available to the public. We have made great strides to make this app work for a variety of situations, but use of this app carries with it no guarantees of success. Nevertheless, we currently strive to make a quality program. Therefore, you use this app at your own risk.</string>
+    <string name="mtLowSignal">Low Signal%1$s&lt;br />\n&lt;i>(Click to Recheck)&lt;/i></string>
+    <string name="mtLowVolume">Volume too low!</string>
+    <string name="mtMap">Map:</string>
+    <string name="mtMinutesUntilCheckIn">%1$s Minutes Until Check-In</string>
+    <string name="mtModeAnonLocationMode">&lt;b>ANONYMOUS LOCATION MODE&lt;/b>\n&lt;br />(SMS sent if caregivee doesn\'t check in periodically. No GPS.)%1$s%2$s</string>
+    <string name="mtModeEmergencySms">&lt;b>EMERGENCY TEXTER MODE&lt;/b>&lt;br />\n(GPS info sent via SMS if caregivee doesn\'t check in periodically.)%1$s%2$s</string>
+    <string name="mtModeLongPress">&lt;br />&lt;br />\n&lt;i>&lt;u>&lt;font color="#0000FF">Long press here to change permissions.&lt;/font>&lt;/u>&lt;/i></string>
+    <string name="mtModeAirplane">&lt;b>AIRPLANE MODE&lt;/b>\n&lt;br />(Phone only emits a loud alert!)\n&lt;br />(No texts sent as &lt;b>&lt;font color="#FF00FF">AIRPLANE MODE&lt;/font>&lt;/b> is on) %1$s%2$s</string>
+    <string name="mtModeSiren">&lt;b>SIREN MODE&lt;/b>\n&lt;br />(Phone only emits a loud alert!)\n&lt;br />(No texts sent) %1$s%2$s</string>
+    <string name="mtNoContactsInApp">No contacts! Please go to settings.</string>
+    <string name="mtNoContactsInPhone">No contacts in phone!</string>
+    <string name="mtNoName">Contact %1$s</string>
+    <string name="mtNotificationChannelName">Foreground Service Channel</string>
+    <string name="mtNotificationBody">Running…\n(Reopen to exit.)</string>
+    <string name="mtNotificationTitle">Caregivee</string>
+    <string name="mtNumbersWrongLength">Number(s) may be wrong length.</string>
+    <string name="mtPleaseCheckIn">Click To Check In…</string>
+    <string name="mtPleaseCheckInNotification">Click To Check In…%1$s</string>
+    <string name="mtPleaseRestart">Error, Please Restart App.</string>
+    <string name="mtRestartActivity">Click to Refresh Page</string>
+    <string name="mtSalientSuggestion1">Please use only for a few hours at most.\n⏰</string> <!-- EMOJI -->
+    <string name="mtSalientSuggestion2">Please test thoroughly before actual use.\n🔬</string> <!-- EMOJI -->
+    <string name="mtSalientSuggestionAboutVersions1">You have an older version of Android, some features may not be available.\n🤖</string> <!-- EMOJI -->
+    <string name="mtSalientSuggestionAboutVersions2">If possible, please use a phone with a more recent version.\n📱</string> <!-- EMOJI -->
+    <string name="mtSalientSuggestionAboutPlugs1">Please plug in the device!\n🔌</string> <!-- EMOJI -->
+    <string name="mtSalientSuggestionAboutPlugs2">… or else it might lose power at a critical time!\n⚡</string> <!-- EMOJI -->
+    <string name="mtSettings">Settings ⚙️</string> <!-- EMOJI -->
+    <string name="mtShortCodeNotice">• %1$s might be an &lt;b>SMS shortcode&lt;/b>.\n&lt;br />• Those may require extra confirmation at "text time".\n&lt;br />• Please review to make sure this is a valid number for your region and resubmit.</string>
+    <string name="mtShortCodeNoticeAbridged">•Possible &lt;i>SMS shortcode&lt;/i>.\n&lt;br />• May require extra confirmation at "text time".\n&lt;br /></string>
+    <string name="mtShortCodeNoticeAbridgedHtml">•Possible <i>SMS shortcode!</i>\n<br /><font size="30">(May require extra confirmation at "text time".)</font></string>
+    <string name="mtSirenModePseudoToast">Siren mode on!\nTexts not being sent!</string>
+    <string name="mtSmsAttempted">Text Attempted!</string>
+    <string name="mtSmsDelayed">Delivery Delayed?</string>
+    <string name="mtSmsDelivered">Text Delivered!</string>
+    <string name="mtSmsForwardedToContact">Text Sent to %1$s!</string>
+    <string name="mtSmsGotException">Text Error!</string>
+    <string name="mtSmsGotExceptionToContact">Text Error to %1$s!</string>
+    <string name="mtSmsNotDelivered">Delivery Failed!</string>
+    <string name="mtSmsNotForwarded">Text Failed!</string>
+    <string name="mtSmsNotForwardedToContact">Text Failed to %1$s!</string>
+    <string name="mtStart">👈🏽 Start</string> <!-- EMOJI -->
+    <string name="mtTimeBetweenCheckIns">Minutes Between Check-Ins:</string>
+    <string name="mtVersion">Version 2025.03.16</string>
+
+    <!-- String Arrays -->
+    <string-array name="mtCountdownFromOptions">
+        <item>15</item>
+        <item>30</item>
+        <item>45</item>
+        <item>60</item>
+        <item>90</item>
+        <item>120</item>
+        <item>180</item>
+        <item>240</item>
+    </string-array>
+    <string-array name="mtSuggestionColors">
+        <item>#FFFFFF</item>
+        <item>#AA0022</item>
+        <item>#AA5500</item>
+        <item>#AA8800</item>
+        <item>#00AA00</item>
+        <item>#0099BB</item>
+        <item>#0066CC</item>
+        <item>#9900CC</item>
+        <item>#BB00BB</item>
+        <item>#AA5500</item>
+        <item>#AA8800</item>
+        <item>#00AA00</item>
+        <item>#CCCCCC</item>
+        <item>#FFA0A0</item>
+        <item>#0066CC</item>
+        <item>#FF0000</item>
+        <item>#FFFFAA</item>
+    </string-array>
+    <string-array name="mtSuggestions">
+        <item>&lt;b>&lt;u>&lt;i>Please Read All&lt;/i>&lt;/u>&lt;/b></item>
+        <item>&lt;b>&lt;i>Please &lt;u>TEST&lt;/u>&lt;/i> app before first actual use!&lt;/b></item>
+        <item>&lt;i>Please&lt;/i> use dedicated phone that doesn\'t receive many calls or texts!</item>
+        <item>&lt;i>Please&lt;/i> plug in phone and keep app open when in use!</item>
+        <item>&lt;i>Please&lt;/i> check &lt;u>&lt;i>signal&lt;/i>&lt;/u> strength!</item>
+        <item>&lt;i>Please&lt;/i> keep volume high!</item>
+        <item>&lt;i>Please&lt;/i> remember: GPS data is not exact!</item>
+        <item>&lt;i>Please&lt;/i> don\'t rely on this app alone!</item>
+        <item>&lt;i>Please&lt;/i> also use a medical alert system!</item>
+        <item>&lt;i>Please&lt;/i> don\'t use SMS shortcodes as contacts!</item>
+        <item>&lt;i>Please&lt;/i> exit app when not in use!</item>
+        <item>&lt;i>Please&lt;/i> don\'t change app permissions while the app is running!</item>
+        <item>&lt;b>&lt;i>Please&lt;/i> don\'t select &lt;u>one-time permissions&lt;/u>, as this can cause premature timeouts!&lt;/b></item>
+        <item>&lt;i>Please&lt;/i> if you have any trouble exiting this app, please reopen app and exit below.</item>
+        <item>&lt;b>&lt;i>Legal info.&lt;/i>&lt;/b></item> <!-- Legal Info -->
+        <item>&lt;b>Click to Exit App…&lt;/b></item>
+        <item>&lt;b>Click to Continue…&lt;/b></item>
+    </string-array>
+</resources>
