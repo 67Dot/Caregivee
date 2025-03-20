@@ -4,10 +4,11 @@
     <string name="mtAirplaneModePseudoToast">Airplane mode on!\nTexts not being sent!</string>
     <string name="mtAllContactSlotsRecommendedAndCurrent">All slots recommended be filled/current.\n(Repeats allowed.)</string>
     <string name="mtAppExit">Closing app…</string>
-    <string name="mtAppNameWithEmojis">Caregivee ❤️😌\n<font size="30">emergencyTexter</font></string> <!-- EMOJI -->
+    <string name="mtAppNameWithEmojis">Caregivee ❤️😌&lt;br />&lt;small>emergencyTexter%1$s&lt;/small></string> <!-- EMOJI -->
     <string name="mtAssistance">Help! (Caregivee)</string>
     <string name="mtAtLeastOneNumberNeeded">Number missing!</string>
     <string name="mtBack">👈🏽 Back</string> <!-- EMOJI -->
+    <string name="mtBetaVersion">&lt;br />&lt;i>&lt;small>&lt;font color="#0000AA">(BETA)&lt;/font>&lt;/small>&lt;/i></string> (parentheses needed)
     <string name="mtCheckedIn">:)</string>
     <string name="mtCheckedInNotification">Running…%1$s</string>
     <string name="mtCoarseLocationMode">&lt;br />&lt;br />\n&lt;b>Approx. GPS Only&lt;/b></string>
@@ -70,7 +71,7 @@
     <string name="mtSmsNotForwardedToContact">Text Failed to %1$s!</string>
     <string name="mtStart">👈🏽 Start</string> <!-- EMOJI -->
     <string name="mtTimeBetweenCheckIns">Minutes Between Check-Ins:</string>
-    <string name="mtVersion">Version 2025.03.16</string>
+    <string name="mtVersion">Version 2025.03.20</string>
 
     <!-- String Arrays -->
     <string-array name="mtCountdownFromOptions">
