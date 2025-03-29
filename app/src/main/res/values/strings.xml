@@ -1,5 +1,7 @@
 <resources>
     <!-- Strings -->
+    <string name="mtVersion">Version 2025.03.29</string>
+
     <string name="mtAppName">Caregivee</string>
     <string name="mtAirplaneModePseudoToast">Airplane mode on!\nTexts not being sent!</string>
     <string name="mtAllContactSlotsRecommendedAndCurrent">All slots recommended be filled/current.\n(Repeats allowed.)</string>
@@ -8,7 +10,7 @@
     <string name="mtAssistance">Help! (Caregivee)</string>
     <string name="mtAtLeastOneNumberNeeded">Number missing!</string>
     <string name="mtBack">👈🏽 Back</string> <!-- EMOJI -->
-    <string name="mtBetaVersion">&lt;br />&lt;i>&lt;small>&lt;font color="#0000AA">(BETA)&lt;/font>&lt;/small>&lt;/i></string> (parentheses needed)
+    <string name="mtBetaVersion">&lt;br />&lt;i>&lt;small>&lt;font color="#0000AA">(BETA)&lt;/font>&lt;/small>&lt;/i></string>
     <string name="mtCheckedIn">:)</string>
     <string name="mtCheckedInNotification">Running…%1$s</string>
     <string name="mtCoarseLocationMode">&lt;br />&lt;br />\n&lt;b>Approx. GPS Only&lt;/b></string>
@@ -71,7 +73,6 @@
     <string name="mtSmsNotForwardedToContact">Text Failed to %1$s!</string>
     <string name="mtStart">👈🏽 Start</string> <!-- EMOJI -->
     <string name="mtTimeBetweenCheckIns">Minutes Between Check-Ins:</string>
-    <string name="mtVersion">Version 2025.03.20</string>
 
     <!-- String Arrays -->
     <string-array name="mtCountdownFromOptions">
@@ -97,6 +98,7 @@
         <item>#AA5500</item>
         <item>#AA8800</item>
         <item>#00AA00</item>
+        <item>#0099BB</item>
         <item>#CCCCCC</item>
         <item>#FFA0A0</item>
         <item>#0066CC</item>
@@ -114,6 +116,7 @@
         <item>&lt;i>Please&lt;/i> don\'t rely on this app alone!</item>
         <item>&lt;i>Please&lt;/i> also use a medical alert system!</item>
         <item>&lt;i>Please&lt;/i> don\'t use SMS shortcodes as contacts!</item>
+        <item>&lt;i>Please&lt;/i> remember, this app does not check for updates automatically.</item>
         <item>&lt;i>Please&lt;/i> exit app when not in use!</item>
         <item>&lt;i>Please&lt;/i> don\'t change app permissions while the app is running!</item>
         <item>&lt;b>&lt;i>Please&lt;/i> don\'t select &lt;u>one-time permissions&lt;/u>, as this can cause premature timeouts!&lt;/b></item>
