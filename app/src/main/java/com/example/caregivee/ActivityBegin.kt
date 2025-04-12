@@ -12,7 +12,7 @@ import android.widget.Toast
    To-Do List When Ready To Publish:
    ================================
    1) Turn off automatic debug mode (if it's been activated in ActivityBehestRecyclerView) like so: mvClassSharedPreferences.mmSetSharedPreferencesInt("mvDebugFlag", 0)
-   2) Update Caregivee "mtVersion" number in strings.xml.
+   2) Update Caregivee "mtVersion" number in strings.xml, and look for "versionCode" and "versionName" and update accordingly.
    3) Is it a BETA version? Set "mvBeta" to true in this activity.
    4) Publish:
          Build > "Generate Signed Bundle / APK"

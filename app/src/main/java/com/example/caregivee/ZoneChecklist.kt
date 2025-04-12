@@ -1734,12 +1734,32 @@ class Itinerary {
             (Or, maybe figure out how to make it NOT an outright Medical App, which would be very difficult)
 
          Perhaps try one one of the following instead:
-            Aptoide
-            F-Droid
-            Amazon Appstore
-            Uptodown
-            APKMirror
+            Archive:   Requires sideloading, but easier to figure out how to download.
+            F-Droid:   Promising, but complicated. (clearer how-to guide: https://randombits.dev/articles/android/fdroid)
+                       https://about.gitlab.com/terms/
+                       Alarming clauses in Subscription Agrreement:
+                          5.3 In accordance with this Agreement and the Documentation, GitLab has the right to (i) verify electronically (or otherwise), and generate, or (ii) require Customer to generate and provide, reports related to Customer’s installation of, access to, and use of the Software to ensure compliance with the terms of this Agreement. Customer shall maintain Customer Records during the term of this Agreement and for two (2) years thereafter. GitLab may, upon thirty (30) days’ prior written notice to Customer and during Customer’s normal business hours and subject to industry-standard confidentiality obligations, hire an independent third-party auditor to audit the Customer Records only to verify the amounts payable under this Agreement with respect to Customer usage of the Software. If an audit reveals underpayment, Customer shall promptly pay the deficiency to GitLab plus late fees pursuant to Section 6. GitLab shall bear the cost of an audit unless the audit reveals underpayment by more than 5% for the audited period, in which case Customer shall promptly pay GitLab for the reasonable costs of the audit
+                          6.7 In the event a Customer procures Software from an Authorized Partner, or, GitLab is unable to: (i) verify and generate a Quarterly Usage Report, and/or (ii) collect payment(s) with respect to Quarterly Add-Ons as provided in the Quarterly Usage Report, Customer shall be obligated to: (a) provide a report no later than twelve (12) months following the Subscription Effective Date (“Annual Report”) of all Users from said Subscription Term (“Overage Users”), and (b) be obligated to pay for such Overage Users, for the previous twelve (12) months, at the then current List Price for the GitLab Software. Overage Users subject to the Annual Report shall not include any pro-ration, set-off and/or deduction to account for term of use, or otherwise. Overage Users that have been identified in an Annual Report shall be considered due and payable in accordance with Section 6. In the event Overage Users are outstanding upon the expiration of a Subscription Term, Customer shall be obligated to pay for such Overage Users in order to renew the Software.
+                          6.8 Any unpaid Fees are subject to a finance charge of one percent (1.0%) per month, or the maximum permitted by law, whichever is lower, plus all expenses of collection, including reasonable attorneys’ fees. Fees under this Agreement are exclusive of any and all taxes or duties, now or hereafter imposed by any governmental authority, including, but not limited to any national, state or provincial tax, sales tax, value-added tax, property and similar taxes, if any. Fees under this Agreement shall be paid without any withholding or deduction. In the case of any deduction or withholding requirements, Customer will pay any required withholding itself and will not reduce the amount to be paid to GitLab on account thereof.
+                         10.2 Customer will defend GitLab and its Affiliates against any claim, demand, suit or proceeding made or brought against GitLab by a third party alleging: (i) that any Customer Content or Customer’s use of Customer Content with the Software or any software (or combination of software) provided by Customer and used with the Software, infringes or misappropriates such third party’s intellectual property rights, or (ii) that Customer uses the Software in an unlawful manner or in violation of the Agreement, the applicable Documentation, or Order Form (each a “GitLab Claim”). Customer will indemnify GitLab from any damages, reasonable attorneys’ fees and costs finally awarded against GitLab as a result of, or for any amounts paid by GitLab under a settlement approved (in writing) by Customer of a GitLab Claim, provided GitLab: (x) promptly gives Customer written notice of the GitLab Claim, (y) gives Customer sole control of the defense and settlement of the GitLab Claim (except that Customer may not settle any GitLab Claim unless it unconditionally releases GitLab of all liability), and (z) gives Customer all reasonable assistance, at Customer’s expense. The above defense and indemnification obligations do not apply if a GitLab Claim arises from GitLab’s breach of this Agreement and/or applicable Order Form.
+                       Read the Subscription Agreement (thus far, only one read of all their documents)
+            ===
+            Amazon:    Getting discontinued mid-2025.
+            UpToDown:  Hosts malicious ads.
+            APKMirror: Hosts malicious ads.
+            APKPure:   Hosts malicious ads.
+            Aptoide:   Rejected the app.
 
+      [ ] My personal study phone was tested, here's what I found:
+             * First, when we scanned with Google, it was allowed to proceed. We didn't have to bypass the scan.
+             * The text was almost always too big for its container, and would spill out of the designated areas.
+           [√] This may be because the device could have a 720p res and the text is sized in a way that doesn't respond to the older resolution.
+                  ACTUALLY... it's because I set the Settings > Display > Font Size higher (or, more accurately, probably Mama or Papa did :D )
+                  If I change from "sp" to "dp" for font sizes, that should fix it.
+                  Here's a list of the default small/medium/large sizes for Android: https://stackoverflow.com/a/22405306/16118981
+           [ ] At one point during testing, turning the screen off wouldn't trigger "please turn the screen back on" alert. I do not know why.
+                  It may be because airplane mode was on.
+                  Or it may be because the app had just commenced.
       [ ] It is possible if I water down functionality to only sending location data via text (ignoring phone calls altogether)...
       ... that I might be able to fill out the appropriate paperwork, make a video explainer, and get it approved on PlayStore:
             https://play.google.com/store/apps/details?id=com.sygic.familywhere.android&hl=en_US&gl=US

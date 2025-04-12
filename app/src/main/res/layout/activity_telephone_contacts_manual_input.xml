@@ -4,7 +4,7 @@
 
 <!-- Use android:keepScreenOn To Keep The Screen From Timing Out (Source: https://stackoverflow.com/a/27744484/16118981) -->
 
-<FrameLayout
+<FrameLayout xmlns:tools="http://schemas.android.com/tools"
     android:keepScreenOn="true"
     android:layout_height="match_parent"
     android:layout_width="match_parent"
@@ -20,7 +20,9 @@
             android:layout_height="0dp"
             android:layout_weight="1"
             android:layout_width="match_parent"
-            android:text="@string/mtLabelContactName"/>
+            android:text="@string/mtLabelContactName"
+            android:textSize="14dp"
+            tools:ignore="SpUsage" />
         <EditText
             android:autofillHints="name"
             android:id="@+id/mxManualName"
@@ -28,21 +30,27 @@
             android:layout_height="0dp"
             android:layout_weight="2"
             android:layout_width="match_parent"
-            android:text=""/>
+            android:text=""
+            android:textSize="18dp"
+            tools:ignore="SpUsage" />
         <TextView
             android:id="@+id/mxManualMobileLabel"
             android:labelFor="@id/mxManualMobile"
             android:layout_height="0dp"
             android:layout_weight="1"
             android:layout_width="match_parent"
-            android:text="@string/mtLabelMobile" />
+            android:text="@string/mtLabelMobile"
+            android:textSize="14dp"
+            tools:ignore="SpUsage" />
         <EditText
             android:autofillHints="phone"
             android:id="@+id/mxManualMobile"
             android:inputType="phone"
             android:layout_height="0dp"
             android:layout_weight="2"
-            android:layout_width="match_parent" />
+            android:layout_width="match_parent"
+            android:textSize="18dp"
+            tools:ignore="SpUsage" />
         <Button
             android:fontFamily="sans-serif-light"
             android:id="@+id/mxBackButton"
@@ -50,7 +58,9 @@
             android:layout_weight="3"
             android:layout_width="match_parent"
             android:text="@string/mtBack"
-            android:textAppearance="@android:style/TextAppearance.Material.Large" />
+            android:textSize="22dp"
+            android:textAppearance="@android:style/TextAppearance.Material.Large"
+            tools:ignore="SpUsage" />
         <TextView
             android:background="#FFFFFF"
             android:fontFamily="sans-serif-light"
@@ -60,7 +70,9 @@
             android:layout_weight="21"
             android:layout_width="match_parent"
             android:text=""
-            android:textAppearance="@android:style/TextAppearance.Material.Large" />
+            android:textSize="22dp"
+            android:textAppearance="@android:style/TextAppearance.Material.Large"
+            tools:ignore="SpUsage" />
         <!-- "top|start" instead "top|left" due to this suggestion: Use "start" instead of "left" to ensure correct behavior in right-to-left locales. -->
     </LinearLayout>
     <LinearLayout
@@ -76,8 +88,10 @@
             android:layout_height="match_parent"
             android:layout_width="match_parent"
             android:text="@string/mtRestartActivity"
+            android:textSize="45dp"
             android:textAppearance="@android:style/TextAppearance.Material.Display2"
-            android:visibility="gone" />
+            android:visibility="gone"
+            tools:ignore="SpUsage" />
     </LinearLayout>
 </FrameLayout>
 

@@ -2,20 +2,24 @@
 
 <!-- Review Markup For This Page [√√√√] -->
 
-<LinearLayout
-    android:layout_height="match_parent"
+<!-- So Important TextView Content Doesn't Get Truncated Due To Font Display Settings In The Phone, Override Text Size With "dp" Instead Of "sp" -->
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
-    android:orientation="vertical"
-    xmlns:android="http://schemas.android.com/apk/res/android">
+    android:layout_height="match_parent"
+    android:orientation="horizontal">
 
     <Button
+        android:id="@+id/mxCaregiveeButton"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
         android:background="#FFCCFF"
         android:fontFamily="sans-serif-black"
-        android:id="@+id/mxCaregiveeButton"
-        android:layout_height="match_parent"
-        android:layout_width="match_parent"
         android:text="@string/mtAppNameWithEmojis"
-        android:textAppearance="@android:style/TextAppearance.Material.Display2" />
+        android:textSize="45dp"
+        android:textAppearance="@android:style/TextAppearance.Material.Display2"
+        tools:ignore="SpUsage" />
 </LinearLayout>
 
 

@@ -4,7 +4,7 @@
 
 <!-- Use android:keepScreenOn To Keep The Screen From Timing Out (Source: https://stackoverflow.com/a/27744484/16118981) -->
 
-<FrameLayout
+<FrameLayout xmlns:tools="http://schemas.android.com/tools"
     android:keepScreenOn="true"
     android:layout_height="match_parent"
     android:layout_width="match_parent"
@@ -22,7 +22,9 @@
             android:layout_weight="1"
             android:layout_width="match_parent"
             android:text="@string/mtTimeBetweenCheckIns"
-            android:textAppearance="@android:style/TextAppearance.Material.Large" />
+            android:textSize="22dp"
+            android:textAppearance="@android:style/TextAppearance.Material.Large"
+            tools:ignore="SpUsage" />
         <Spinner
             android:background="#F5F5F5"
             android:fontFamily="sans-serif-light"
@@ -31,7 +33,9 @@
             android:layout_height="0dp"
             android:layout_weight="2"
             android:layout_width="match_parent"
-            android:textAppearance="@android:style/TextAppearance.Material.Large"/>
+            android:textSize="22dp"
+            android:textAppearance="@android:style/TextAppearance.Material.Large"
+            tools:ignore="SpUsage" />
         <Button
             android:fontFamily="sans-serif-light"
             android:id="@+id/mxContact0"
@@ -39,7 +43,9 @@
             android:layout_weight="2"
             android:layout_width="match_parent"
             android:text="@string/mtContact0"
-            android:textAppearance="@android:style/TextAppearance.Material.Large"/>
+            android:textSize="22dp"
+            android:textAppearance="@android:style/TextAppearance.Material.Large"
+            tools:ignore="SpUsage" />
         <Button
             android:fontFamily="sans-serif-light"
             android:id="@+id/mxContact1"
@@ -47,7 +53,9 @@
             android:layout_weight="2"
             android:layout_width="match_parent"
             android:text="@string/mtContact1"
-            android:textAppearance="@android:style/TextAppearance.Material.Large" />
+            android:textSize="22dp"
+            android:textAppearance="@android:style/TextAppearance.Material.Large"
+            tools:ignore="SpUsage" />
         <Button
             android:fontFamily="sans-serif-light"
             android:id="@+id/mxContact2"
@@ -55,7 +63,9 @@
             android:layout_weight="2"
             android:layout_width="match_parent"
             android:text="@string/mtContact2"
-            android:textAppearance="@android:style/TextAppearance.Material.Large" />
+            android:textSize="22dp"
+            android:textAppearance="@android:style/TextAppearance.Material.Large"
+            tools:ignore="SpUsage" />
         <Button
             android:fontFamily="sans-serif-light"
             android:id="@+id/mxBackButton"
@@ -63,7 +73,9 @@
             android:layout_weight="2"
             android:layout_width="match_parent"
             android:text="@string/mtStart"
-            android:textAppearance="@android:style/TextAppearance.Material.Large" />
+            android:textSize="22dp"
+            android:textAppearance="@android:style/TextAppearance.Material.Large"
+            tools:ignore="SpUsage" />
         <TextView
             android:background="#FFFFFF"
             android:fontFamily="sans-serif-light"
@@ -73,7 +85,9 @@
             android:layout_weight="9"
             android:layout_width="match_parent"
             android:text=""
-            android:textAppearance="@android:style/TextAppearance.Material.Large"/>
+            android:textSize="22dp"
+            android:textAppearance="@android:style/TextAppearance.Material.Large"
+            tools:ignore="SpUsage" />
         <!-- "top|start" instead "top|left" due to this suggestion: Use "start" instead of "left" to ensure correct behavior in right-to-left locales. -->
     </LinearLayout>
     <LinearLayout
@@ -89,8 +103,10 @@
             android:layout_height="match_parent"
             android:layout_width="match_parent"
             android:text="@string/mtRestartActivity"
+            android:textSize="45dp"
             android:textAppearance="@android:style/TextAppearance.Material.Display2"
-            android:visibility="gone" />
+            android:visibility="gone"
+            tools:ignore="SpUsage" />
     </LinearLayout>
 </FrameLayout>
 

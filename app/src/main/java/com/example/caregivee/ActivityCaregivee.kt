@@ -239,6 +239,15 @@ class ActivityCaregivee : Activity()  {
                     1    -> mvPseudoToastView1.also{mvHandler.removeCallbacks(mvRunnable1) /* <-- Delay Any Previously Pending Pseudo-Toast Dismissals Since We Have A New Incoming Pseudo-Toast */}.also{if (mvDismiss) mvHandler.postDelayed(mvRunnable1, 2500+mvTimeAddend.toLong())}
                     else -> mvPseudoToastView2.also{mvHandler.removeCallbacks(mvRunnable2) /* <-- Delay Any Previously Pending Pseudo-Toast Dismissals Since We Have A New Incoming Pseudo-Toast */}.also{if (mvDismiss) mvHandler.postDelayed(mvRunnable2, 1500+mvTimeAddend.toLong())}
                 }.also{it.visibility = if (mvToastMessageFormatted != "") View.VISIBLE else View.INVISIBLE /* <-- Reset Condition */}.also{if (!mvAppend) it.text = mvClassFromHtml.mmFromHtml(mvToastMessageFormatted) else it.append("\n" + mvClassFromHtml.mmFromHtml(mvToastMessageFormatted))}
+            //Debug All PseudoToasts
+                /*
+                    mvPseudoToastView0.also{it.text = "Testing 1"
+                        it.visibility = View.VISIBLE}
+                    mvPseudoToastView1.also{it.text = "Testing 2"
+                        it.visibility = View.VISIBLE}
+                    mvPseudoToastView2.also{it.text = "Testing 3"
+                        it.visibility = View.VISIBLE}
+                */
         }
     //If We've Been Using The Notification-Based "Secondary Caregivee Button"
     //(And We Didn't Dismiss The App From The Recents Menu)

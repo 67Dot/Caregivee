@@ -11,8 +11,8 @@ android {
         applicationId = "com.example.caregivee"
         minSdk = 21
         targetSdk = 34
-        versionCode = 1
-        versionName = "1.0"
+        versionCode = 20250329
+        versionName = "2025.03.29"
 
         testInstrumentationRunner = "androidx.test.runner.AndroidJUnitRunner"
         vectorDrawables {
