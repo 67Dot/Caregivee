@@ -1,6 +1,6 @@
 <resources>
     <!-- Strings -->
-    <string name="mtVersion">Version 2025.03.29</string>
+    <string name="mtVersion">Version 2025.04.12</string>
 
     <string name="mtAppName">Caregivee</string>
     <string name="mtAirplaneModePseudoToast">Airplane mode on!\nTexts not being sent!</string>
